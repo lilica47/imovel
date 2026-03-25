@@ -1,0 +1,151 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* BODY */
+body {
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #0f4c81, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* GALERIA */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* INFO */
+.info {
+  margin-top: 25px;
+}
+
+.info h2 {
+  color: #0f4c81;
+  margin-bottom: 15px;
+}
+
+.info p {
+  line-height: 1.6;
+}
+
+/* DETALHES */
+.detalhes {
+  margin: 20px 0;
+  padding: 15px;
+  background: #eaf2fb;
+  border-left: 5px solid #0f4c81;
+  border-radius: 8px;
+}
+
+.detalhes ul {
+  list-style: none;
+}
+
+.detalhes li {
+  margin-bottom: 8px;
+}
+
+/* PREÇO */
+.preco {
+  font-size: 2rem;
+  color: #16a34a;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* BOTÃO WHATSAPP */
+.whatsapp {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.whatsapp:hover {
+  background: #1ebe5d;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+  background: #0f4c81;
+  color: white;
+}
+
+/* MODAL (imagem ampliada) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+.modal img {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
